@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo_bacardi.png';
+---
+
+
+<header id="navbar" class="fixed w-full top-0 left-0 z-20 p-6 transition-all duration-500 ease-in-out">
+  <nav class="container mx-auto flex justify-between items-center">
+    <a href="/" class="text-white text-2xl font-bold transition-transform hover:scale-105">
+      <Image src={logo} alt="Bacardi Breezer Logo" width={50} height={50} />
+    </a>
+    <ul class="flex space-x-6">
+      <li><a href="/" class="text-white hover:text-yellow-300 transition-colors duration-300">Inicio</a></li>
+      <li><a href="/productos" class="text-white hover:text-yellow-300 transition-colors duration-300">Productos</a></li>
+      <li><a href="/recetas" class="text-white hover:text-yellow-300 transition-colors duration-300">Recetas</a></li>
+      <li><a href="/contacto" class="text-white hover:text-yellow-300 transition-colors duration-300">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+
